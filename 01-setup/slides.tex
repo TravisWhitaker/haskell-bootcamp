@@ -1,0 +1,109 @@
+\documentclass{beamer}
+
+\usepackage{listings}
+\usepackage{hyperref}
+
+% Make Beamer less ugly:
+\usefonttheme{serif}
+\setbeamercolor{title}{fg=black}
+\setbeamercolor{titlelike}{fg=black}
+\setbeamercolor{frametitles}{fg=black}
+\setbeamertemplate{itemize items}{\color{black}\textbullet}
+
+\frenchspacing
+
+\lstset{basicstyle=\small}
+\lstset{language=C}
+
+\begin{document}
+
+\title{Haskell Bootcamp \\ Module 1: Setup, Tools, and Resources}
+\author{Travis Whitaker}
+\date{}
+
+\maketitle
+
+\begin{frame}
+\frametitle{Welcome to Haskell!}
+I hope you're ready to:
+\begin{itemize}
+\item Think about programs from a new and valuable perspective.
+\item Quickly create programs that are short, fast, and correct on the first
+      try.
+\item Leverage modern advancements (1980's onward) to structure your software
+      into generic, reusable, verifyable pieces.
+\item Leave behind memory safety issues, buggy concurrency, and unhandled
+      runtime failures.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Non-Goals}
+\begin{itemize}
+\item Covering every nook and cranny of Haskell's syntax and features.
+\item Learning Category Theory, Homotopy Type Theory, or other theoretical
+      nonsense.
+\item Examining the lowest-level parts of the language, e.g. manually managing
+      memory, exactly how programs are compiled to machine code, etc.
+\item Decoding FP snob esotera, e.g. what does \texttt{((.) . (.) . (.))} do?
+\item See also the ``Zero Bullshit Haskell'' project.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Resources: Haskell Programming from First Principles}
+\begin{itemize}
+\item \url{http://haskellbook.com/}
+\item Best Haskell book currently available.
+\item Focuses on intuition-building.
+\item Loads of good coding exercises.
+\item I've used this to successfully bootstrap interns in under two weeks.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Resources: Real World Haskell}
+\begin{itemize}
+\item \url{http://book.realworldhaskell.org/read/}
+\item Old, but gold.
+\item Exposition of core language functionality is still relevant.
+\item Chapters exploring specific libraries are mostly out of date.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Resources: Learn You a Haskell for Great Good}
+\begin{itemize}
+\item \url{http://learnyouahaskell.com/}
+\item Good early exposition of syntax and semantics.
+\item Quickly moves on to advanced features.
+\item No content related to building whole working programs.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Resources: Parallel and Concurrent Programming in
+            Haskell
+           }
+\begin{itemize}
+\item \url{https://www.oreilly.com/library/view/parallel-and-concurrent/9781449335939/}
+\item Intermediate level material, assumes some basic Haskell knowledge.
+\item Excellent exposition of concurrent Haskell.
+\item Written by the dude who wrote the GHC runtime system.
+\item Includes loads of useful patterns, even if you aren't programming in
+      Haskell.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Resources: Hackage}
+\begin{itemize}
+\item \url{https://hackage.haskell.org}
+\item This is Haskell's public package reposity.
+\item Think PyPI, Rust Crates, CPAN, etc.
+\item Really good search; whatever you need is probably already there.
+\item Generated documentation for all packages.
+\end{itemize}
+\end{frame}
+
+\end{document}
